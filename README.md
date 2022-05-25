@@ -32,6 +32,7 @@ Notes on building Rails application:
 - root CONTROLLER_NAME#ACTION_NAME will define the root path
 - the controller accesses the views that will be sent back to user
 - all additional controllers made will inherit/subclass from the default application_controller.erb
+- when action in controller doesn't explicitly render a view, it will find a view that matches the name of the controller and action(i.e. pages_controller with an empty home action would render views/pages/home)
 
 - views are in views folder
 - app/assets stores static assets(images, stylesheets)
